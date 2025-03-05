@@ -25,8 +25,8 @@ func main() {
     http.HandleFunc("/login", login)
     http.HandleFunc("/callback", callback)
 
-    fmt.Println("Server started at http://localhost:8080")
-    log.Fatal(http.ListenAndServe(":8080", nil))
+    fmt.Println("Server started at http://0.0.0.0:8080")
+    log.Fatal(http.ListenAndServe("0.0.0.0:8080", nil))
 }
 
 func home(w http.ResponseWriter, r *http.Request) {

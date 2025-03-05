@@ -12,6 +12,7 @@
       buildInputs = [
         pkgs.go
         pkgs.gopls
+        pkgs.godef
         pkgs.gotools
         pkgs.gofumpt
         pkgs.golangci-lint
